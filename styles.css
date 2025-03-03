@@ -1,5 +1,5 @@
 body {
-    background-color: #2b54ab;
+    background-color: #acc3f4;
 }
 h1 {
     color: white;
@@ -14,8 +14,7 @@ img:hover {
     border-color: yellow;
 }
 a {
-    color: white;
-    font-size: 36px;
+    color: rgb(10, 19, 28);
     text-decoration: none;
 }
 #main-nav {
