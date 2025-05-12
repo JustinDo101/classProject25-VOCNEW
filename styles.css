@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: darkgray;
 }
+
 .main-header {
     background-color: #44463a;
     display: flex;
@@ -12,39 +13,49 @@ body {
     padding-left: 25px;
     padding-right: 25px;
 }
+
 .logo {
     width: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .main-navigation {
     display: flex;
     flex-flow: row wrap;
 }
-.main-navigation a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 0.7em;
-}
-.user-nav {
-    display: flex;
-    flex-flow: row wrap;
-}
-.user-nav a {
+
+.main-navigation a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
     padding: 0.7em;
 }
 
+.user-nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.user-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.7em;
+}
+.user-nav a:hover {
+    color: yellow;
+}
+
 .dropdown {
     position: relative;
 }
+
 .dropdown a {
     display: block;
 }
-.dropdown > a::after {
+
+.dropdown>a::after {
     content: "\25bc";
     font-size: 0.5em;
     margin-left: 0.5em;
@@ -60,10 +71,35 @@ body {
     overflow: hidden;
     min-width: 100%;
 }
+
 .dropdown:hover .dropdown-menu {
     max-height: 50vh;
 }
+
 .dropdown-menu a {
     white-space: nowrap;
 }
 
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.site-search {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0.7em;
+    min-width: 30vw;
+}
+.site-search input {
+    flex: 1;
+    padding: 0.5em;
+    border: 1px solid transparent;
+}
+.site-search button {
+    padding: 0.5em;
+    border: 1px solid transparent;
+}
