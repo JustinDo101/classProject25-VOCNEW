@@ -12,6 +12,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <!-- body is for content -->
 
@@ -67,7 +69,49 @@
             </a>
         </nav>
     </header>
-    <main></main>
+    <!-- slideshow -->
+    <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay" : true }'>
+        <div class="slide">
+            <img src="images/slides/pexels-cottonbro-6153367.jpg" alt="shoes">
+        </div>
+        <div class="slide">
+            <img src="images/slides/pexels-craytive-1478442.jpg" alt="shoes">
+        </div>
+        <div class="slide">
+            <img src="images/slides/pexels-pixabay-267301.jpg" alt="shoes">
+        </div>
+        <div class="slide">
+            <img src="images/slides/pexels-pixabay-267320.jpg" alt="shoes">
+        </div>
+        <div class="slide">
+            <img src="images/slides/pexels-webdonut-19090.jpg" alt="shoes">
+        </div>
+    </div>
+    <main>
+        <div class="featured-grid">
+            <div class="card col-4">
+                <img class="card-image" src="images/products/casual-shoes-7756405_1920.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Casual</h3>
+                    <a href="#" class="card-button">Shop Casual</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img class="card-image" src="images/products/feet-349687_1920.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Smart Casual</h3>
+                    <a href="#" class="card-button">Shop Smart Casual</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img class="card-image" src="images/products/monkey-2708458_1920.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Street Casual</h3>
+                    <a href="#" class="card-button">Shop Street Casual</a>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 </body>
 
