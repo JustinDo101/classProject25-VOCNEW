@@ -3,6 +3,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: darkgray;
     overflow-y: scroll;
+    min-height: 100vh;
+}
+.contact-page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .main-header {
@@ -148,6 +153,7 @@ body {
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
+    width: 100%;
 }
 .col-4 {
     grid-column: span 4;
@@ -173,6 +179,7 @@ body {
     justify-content: center;
     gap: 2em;
     width: 100%;
+    margin-bottom: 1em;
 }
 .footer-container {
     padding: 2em 4em;
@@ -194,4 +201,24 @@ body {
 .footer-nav h4 {
     padding: 0.7em;
     margin: 0px;
+}
+#contact-form label{
+    display: block;
+}
+#contact-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+#map {
+    width: 100%;
 }
