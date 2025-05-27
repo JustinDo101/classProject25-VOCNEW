@@ -79,6 +79,7 @@ body {
     max-height: 0px;
     overflow: hidden;
     min-width: 100%;
+    z-index: 999;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -153,4 +154,44 @@ body {
 }
 .col-3 {
     grid-column: span 3;
+}
+
+.main-footer {
+    background-color: black;
+    margin-top: 4em;
+}
+.social-nav a{
+    color: white;
+    font-size: 2em;
+}
+.social-nav a:hover {
+    color: yellow;
+}
+.social-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+}
+.footer-container {
+    padding: 2em 4em;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer-nav {
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+}
+.footer-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.7em;
+    font-size: 1.2em;
+}
+.footer-nav h4 {
+    padding: 0.7em;
+    margin: 0px;
 }
