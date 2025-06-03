@@ -193,10 +193,25 @@ body {
 }
 .footer-nav a {
     display: block;
-    color: white;
+    /* color: white; */
     text-decoration: none;
     padding: 0.7em;
     font-size: 1.2em;
+}
+.footer-nav a:link {
+    color: white;
+}
+.footer-nav a:visited {
+    color: #abaaaa;
+}
+.footer-nav a:hover {
+    color: yellow;
+}
+.footer-nav a:active {
+    color: greenyellow;
+}
+.footer-nav a.active {
+    font-weight: bold;
 }
 .footer-nav h4 {
     padding: 0.7em;
